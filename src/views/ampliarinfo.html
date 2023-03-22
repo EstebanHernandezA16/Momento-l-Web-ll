@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/styles/estilosHome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+
+  <header>
+    <nav class="navbar navbar-expand-lg menu navbar-dark animate__animated animate__backInLeft fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Noticias</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Seccion foro
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://discord.com/invite/genshinimpact">Pozo de las penurias</a></li>
+                  <li><a class="dropdown-item" href="https://www.reddit.com/r/BudokaiTenkaichi4/comments/11jivr5/dragon_ball_z_budokai_tenkaichi_4_official_reveal/">Reddit</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <button class="btn btn-link" id="cleaner">Limpiar carrito</button>
+              <li class="nav-item">
+                <a href="" class="nav-link active">
+                  <i class="bi bi-cart4 fs-2"></i>
+                  <span id="pildora" class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger">
+                    0
+                  </span>
+                </a>
+              </li>
+             </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
+    <main>
+
+        <div class="container-fluid my-5">
+            <div class="row mt-5 justify-content-center">
+                <div class="col-7">
+                    <img src="" alt="foto" class="img-fluid w-100" id="foto">
+                </div>
+                <div class="col-4 border border-start align-self-center">
+                  
+                    <h3 class="fw-bold mt-5" id="titulo"></h3>
+                    <h2 class="text-success" id="precio"></h2>
+                    <p id="desc" class="mt-1"></p>
+                    <br>
+                    <i class="bi bi-truck fs-1 mt-5"></i>
+                    <h4>Entrega en 24 Horas</h4>
+                    <br>
+                    <i class="bi bi-arrow-counterclockwise fs-1"></i>
+                    <h4>Devoluciones gratis en 30 días</h4>
+                    <br>
+                    <h3>Metodos de pago aceptados</h6>
+                    <img src="../../assets/img/visa.png" alt="logovisa"
+                    class="img-fluid ">
+                    <img src="../../assets/img/AE.png" alt="logoamerican"
+                    class="img-fluid">
+                    <img src="../../assets/img/efectivo.png" alt="logoamerican"
+                    class="img-fluid">
+                    <br><br>
+                    <h4>Cantidad: </h4>
+                    
+                    <input type="number" min="1" max="10000" class="form-control" id="input-compra" placeholder="1">
+
+                    <hr>
+                    <h5 class="mt-2">$SUBTOTAL</h5>
+                    <h5 type="number" class="mt-2 text-info" id="subtotal"></h5>
+
+                    <button type="button" class="btn btn-warning my-5" id="btnagregarcarrito"><i class="bi bi-cart-fill"></i> añadir al carro</button>
+                    <button type="button" id="btn-dolares" style="visibility: visible;" class="btn btn-success my-5"><i class="bi bi-currency-dollar"></i> Ver precio en dolares</button>
+                    <button type="button" id="btn-pesos" style="visibility: hidden;" class="btn btn-info my-5"><i class="bi bi-coin"></i> Ver precio en pesos</button>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+
+
+
+
+    <script src="../controllers/controladorCompra.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
